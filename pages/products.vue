@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h1>{{ title }}</h1>
+    <h1 id="product-header">{{ title }}</h1>
     <div v-bind:key="product.id" v-for="product in products">
       <product-item v-bind:product="product" />
     </div>
@@ -33,4 +33,10 @@ export default {
 </script>
 
 <style>
+
+#product-header{
+  border-bottom: 1px #ccc dotted;
+  margin-right: 80%;
+}
+
 </style>
