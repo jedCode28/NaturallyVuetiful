@@ -3,6 +3,7 @@
     <p>{{product.name}}</p>
     <p>${{product.retail_price}}</p>
     <a>Add To Cart</a>
+    <a id="desc">See Full Description</a>
   </div>
 </template>
 
@@ -30,6 +31,10 @@
   a{
     font-size: 12px;
     padding: 0px;
+  }
+
+  #desc{
+    padding-left: 5%;
   }
 
 </style>
